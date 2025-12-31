@@ -162,7 +162,7 @@ const url = new URL(`/blog/${blog.slug}`, Astro.url.origin);
             right: ["slideshow", "thumbs", "close"],
           },
         },
-      });
+      } as any);
     });
   </script>
 </BaseLayout>
