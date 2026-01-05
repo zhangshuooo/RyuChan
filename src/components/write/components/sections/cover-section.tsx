@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { motion } from 'motion/react'
 import { toast } from 'sonner'
 import { useWriteStore } from '../../stores/write-store'
@@ -12,8 +12,22 @@ type CoverSectionProps = {
 export function CoverSection({ delay = 0 }: CoverSectionProps) {
 	const { images, setCover, cover, addFiles } = useWriteStore()
 	const fileInputRef = useRef<HTMLInputElement>(null)
+    const [showUrlInput, setShowUrlInput] = useState(false)
+    const [urlInput, setUrlInput] = useState('')
 
 	const coverPreviewUrl = cover ? (cover.type === 'url' ? cover.url : cover.previewUrl) : null
+
+    const handleUrlSubmit = () => {
+        if (!urlInput.trim()) return
+        setCover({
+            id: Date.now().toString(),
+            type: 'url',
+            url: urlInput.trim()
+        })
+        setShowUrlInput(false)
+        setUrlInput('')
+        toast.success('已设置封面')
+    }
 
 	const handleCoverDrop = async (e: React.DragEvent<HTMLDivElement>) => {
 		e.preventDefault()
@@ -80,10 +94,35 @@ export function CoverSection({ delay = 0 }: CoverSectionProps) {
 
 	return (
 		<motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay }} className='card bg-base-100 border border-base-200 shadow-sm p-4 relative'>
-			<h2 className='text-sm font-bold text-primary'>封面</h2>
+			<div className="flex items-center justify-between mb-3">
+                <h2 className='text-sm font-bold text-primary'>封面</h2>
+                <button 
+                    className="text-xs text-base-content/60 hover:text-primary transition-colors"
+                    onClick={() => setShowUrlInput(!showUrlInput)}
+                >
+                    {showUrlInput ? '取消' : '网络图片'}
+                </button>
+            </div>
+            
+            {showUrlInput && (
+                <div className="flex gap-2 mb-3">
+                    <input 
+                        type="text" 
+                        className="input input-sm input-bordered w-full text-xs" 
+                        placeholder="输入图片 URL"
+                        value={urlInput}
+                        onChange={e => setUrlInput(e.target.value)}
+                        onKeyDown={e => e.key === 'Enter' && handleUrlSubmit()}
+                    />
+                    <button className="btn btn-sm btn-primary btn-square" onClick={handleUrlSubmit}>
+                        <span className="text-xs">OK</span>
+                    </button>
+                </div>
+            )}
+
 			<input ref={fileInputRef} type='file' accept='image/*' className='hidden' onChange={handleFileChange} />
 			<div
-				className='bg-base-100 mt-3 h-[150px] overflow-hidden rounded-xl border border-base-200 border-dashed hover:border-primary/50 transition-colors'
+				className='bg-base-100 h-[150px] overflow-hidden rounded-xl border border-base-200 border-dashed hover:border-primary/50 transition-colors'
 				onDragOver={e => {
 					e.preventDefault()
 				}}

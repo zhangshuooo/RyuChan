@@ -28,7 +28,7 @@ export function WriteActions() {
 	}
 
 	const handleCancel = () => {
-		if (!window.confirm('放弃本次修改吗？')) {
+		if (!window.confirm('确定放弃本次修改吗？未保存的内容将丢失。')) {
 			return
 		}
 		if (mode === 'edit' && originalSlug) {
@@ -58,6 +58,11 @@ export function WriteActions() {
 	const handleMdFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
 		const file = e.target.files?.[0]
 		if (!file) return
+
+		if (form.md && !window.confirm('确定导入 Markdown 文件吗？这将覆盖当前内容。')) {
+			if (e.currentTarget) e.currentTarget.value = ''
+			return
+		}
 
 		try {
 			const text = await file.text()

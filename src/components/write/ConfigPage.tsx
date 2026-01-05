@@ -265,7 +265,7 @@ export function ConfigPage() {
             toast.loading('正在更新分支...', { id: toastId })
             await updateRef(token, GITHUB_CONFIG.OWNER, GITHUB_CONFIG.REPO, refName, newCommitSha)
 
-			toast.success('配置已更新！等待部署生效', { id: toastId })
+			toast.success('配置已更新！请等待部署完成后刷新页面', { id: toastId })
 		} catch (error: any) {
             console.error(error)
 			toast.error('保存配置失败: ' + error.message)

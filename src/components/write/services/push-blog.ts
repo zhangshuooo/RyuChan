@@ -122,7 +122,7 @@ export async function pushBlog(params: PushBlogParams): Promise<void> {
         toast.loading('正在更新分支...', { id: toastId })
         await updateRef(token, GITHUB_CONFIG.OWNER, GITHUB_CONFIG.REPO, `heads/${GITHUB_CONFIG.BRANCH}`, commitData.sha)
 
-        toast.success('发布成功！', { id: toastId })
+        toast.success('发布成功！请等待部署完成后刷新页面', { id: toastId })
     } catch (error: any) {
         console.error(error)
         toast.error(error.message || '发布失败', { id: toastId })
