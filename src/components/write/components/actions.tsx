@@ -17,7 +17,13 @@ export function WriteActions() {
 		if (!isAuth) {
 			keyInputRef.current?.click()
 		} else {
-			onPublish()
+			const confirmMsg = mode === 'edit' 
+				? `确定更新《${form.title}》吗？这将直接推送到 GitHub 仓库。` 
+				: `确定发布《${form.title}》吗？这将直接推送到 GitHub 仓库。`
+			
+			if (window.confirm(confirmMsg)) {
+				onPublish()
+			}
 		}
 	}
 

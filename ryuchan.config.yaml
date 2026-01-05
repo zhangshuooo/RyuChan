@@ -110,7 +110,7 @@ user:
         svg: ri:twitter-line
       - href: https://demo.131714.xyz/rss.xml
         ariaLabel: Subscribe via Folo
-        title: Folo
+        title: RSS
         svg: ri:rss-fill
   footer:
     social:

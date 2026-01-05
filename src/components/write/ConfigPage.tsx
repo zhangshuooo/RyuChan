@@ -164,6 +164,9 @@ export function ConfigPage() {
     }
 
 	const handleSave = async () => {
+        if (!window.confirm('确定保存配置吗？这将直接推送到 GitHub 仓库。')) {
+            return
+        }
 		try {
 			setSaving(true)
             const token = await getAuthToken()
