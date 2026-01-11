@@ -4,6 +4,7 @@ interface MusicItem {
     cover: string;
     title: string;
     artist: string;
+    duration?: string;
 }
 
 interface Props {
@@ -132,7 +133,7 @@ const playlistData = list ? JSON.stringify(list) : "[]";
                             <p class="text-[11px] text-neu-text-muted truncate uppercase tracking-wider">{item.artist || "Unknown Artist"}</p>
                         </div>
                         <!-- Duration -->
-                        <div class="text-xs font-mono text-neu-text-muted font-bold playlist-duration">--:--</div>
+                        <div class="text-xs font-mono text-neu-text-muted font-bold playlist-duration">{item.duration || "--:--"}</div>
                      </li>
                     ))}
                 </ul>
