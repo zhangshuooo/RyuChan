@@ -154,6 +154,9 @@ user:
         ariaLabel: Telegram
         title: Telegram
         svg: ri:telegram-line
+site:
+  icp: 粤ICP备DEMO12345号
+  icp_link: https://beian.miit.gov.cn/
 comments:
   enable: true
   type: giscus

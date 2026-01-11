@@ -59,6 +59,10 @@ export const USER_FOOTER_SOCIAL_ICONS = config.user.footer.social;
 // 网站菜单项配置
 export const SITE_MENU = config.site.menu;
 
+// 备案信息
+export const SITE_ICP = config.site.icp || "";
+export const SITE_ICP_LINK = config.site.icp_link || "https://beian.miit.gov.cn/";
+
 // 多语言文本配置
 export const TRANSLATIONS = translationsConfig;
 

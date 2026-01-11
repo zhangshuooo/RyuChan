@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import { USER_NAME, USER_SITE, USER_FOOTER_SOCIAL_ICONS } from "@config";
+import { USER_NAME, USER_SITE, USER_FOOTER_SOCIAL_ICONS, SITE_ICP, SITE_ICP_LINK } from "@config";
 ---
 
 <footer class="footer bg-base-100 py-2 px-4 md:p-10 rounded-xl shadow-lg gap-y-2 md:gap-4">
@@ -21,10 +21,16 @@ import { USER_NAME, USER_SITE, USER_FOOTER_SOCIAL_ICONS } from "@config";
       ></path>
     </svg>
     <p class="text-xs md:text-base">
-  Powered by <a href="https://github.com/EveSunMaple/Ryuchan" target="_blank" class="font-bold">Ryuchan Template</a>
+      Powered by <a href="https://github.com/EveSunMaple/Ryuchan" target="_blank" class="font-bold">Ryuchan Template</a>
       <br />
       Copyright © <a href={USER_SITE} target="_blank" class="font-bold">{USER_NAME}</a>
       {new Date().getFullYear()} - All right reserved
+      {SITE_ICP && (
+        <>
+          <br />
+          <a href={SITE_ICP_LINK} target="_blank" rel="noopener" class="text-blue-500">{SITE_ICP}</a>
+        </>
+      )}
     </p>
   </aside>
   <nav>
