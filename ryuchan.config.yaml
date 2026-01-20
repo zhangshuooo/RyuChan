@@ -3,7 +3,7 @@ site:
   title: RyuChan
   description: 🌸 轻盈、优雅、纯净 —— 用文字与图片记录生活与创意
   language: zh
-  favicon: /favicon.ico
+  favicon: /images/uploads/1768888949168-drxjey.png
   theme:
     light: garden
     dark: dracula
@@ -104,7 +104,7 @@ github:
   owner: kobaridev
   repo: RyuChan
   branch: main
-  appId: '在部署端配置环境变量'
+  appId: 在部署端配置环境变量
   encryptKey: wudishiduomejimo
 umami:
   enable: true
