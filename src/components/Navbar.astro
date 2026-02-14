@@ -48,7 +48,7 @@ const typedMenu = SITE_MENU as MenuItem[];
           {typedMenu.map((item) => (      
             item.subItems ? (      
               <div class="dropdown dropdown-hover">      
-                <div tabindex="0" role="button" class="nav-item btn btn-ghost text-xl md:text-3xl lg:text-xl font-bold px-4 py-2 rounded-xl hover:bg-white/10 transition-all duration-200 text-base-content dark:text-white flex items-center gap-2">      
+                <div tabindex="0" role="button" class="nav-item btn btn-ghost text-lg font-bold px-4 py-2 rounded-xl hover:bg-white/10 transition-all duration-200 text-base-content dark:text-white flex items-center gap-2 whitespace-nowrap">      
                   <Icon name={item.svg} class="w-5 h-5" />
                   <span>{item.text}</span>
                 </div>      
