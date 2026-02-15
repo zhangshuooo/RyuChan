@@ -37,6 +37,45 @@
         "duration": "04:08"
     },
     {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "cover": "https://p1.music.126.net/Zg-bnruyZm1L9GdPKI3RTw==/18205713532941813.jpg",
+        "url": "https://img.xiaozhangya.xin/file/rWrA4QAd.mp3",
+        "lrc": "https://img.xiaozhangya.xin/file/Drv7Hufi.octet-stream",
+        "duration": "03:58"
+    },
+    {
+        "title": "Fake Plastic Tree",
+        "artist": "Radiohead",
+        "cover": "https://p1.music.126.net/WDUaKDfBp8AaIlMY9TC-zw==/1362294906856551.jpg",
+        "url": "https://img.xiaozhangya.xin/file/wbW7nG07.mp3",
+        "lrc": "https://img.xiaozhangya.xin/file/eUpjhchl.octet-stream",
+        "duration": "04:50"
+    },
+    {
+        "title": "A Wolf At thr Door",
+        "artist": "Radiohead",
+        "cover": "https://p2.music.126.net/mUGYRA5LBxzhUVvM0ZWEdQ==/109951168981965457.jpg",
+        "url": "https://img.xiaozhangya.xin/file/pQKnwta5.mp3",
+        "lrc": "https://img.xiaozhangya.xin/file/OoV2y0fw.octet-stream",
+        "duration": "03:21"
+    },
+    {
+        "title": "in thr pool",
+        "artist": "Radiohead",
+        "cover": "https://p1.music.126.net/Gkq6kZq34FXdftSiudC6Pw==/109951171008164588.jpg",
+        "url": "https://img.xiaozhangya.xin/file/lwMHSwgz.mp3",
+        "duration": "03:59"
+    },
+    {
+        "title": "No Surprises",
+        "artist": "Radiohead",
+        "cover": "https://p2.music.126.net/G7q64RST3hAZ36-DdtpLnA==/109951169071233650.jpg",
+        "url": "https://img.xiaozhangya.xin/file/TRsA4199.mp3",
+        "lrc": "https://img.xiaozhangya.xin/file/DxwPO4Pc.octet-stream",
+        "duration": "03:49"
+    },
+    {
         "title": "みちしるべ",
         "artist": "茅原実里",
         "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/c8/c4/75c8c47c-caff-649b-82a2-081d8a80d23a/4540774147137.png/592x592bb.webp",
@@ -51,13 +90,5 @@
         "url": "https://picbed.xiaozhangya.xin/music/Love%20Story%20(Taylor%E2%80%99s%20Version)%20-%20Taylor%20Swift.flac",
         "lrc": "https://picbed.xiaozhangya.xin/music/Love%20Story%20(Taylor%E2%80%99s%20Version)%20-%20Taylor%20Swift.lrc",
         "duration": "03:55"
-    },
-    {
-        "title": "可惜没如果",
-        "artist": "林俊杰",
-        "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/5a/1b/575a1bc9-ca86-7549-e873-b55663ba6276/4711508105925.jpg/592x592bb.webp",
-        "url": "https://picbed.xiaozhangya.xin/music/%E5%8F%AF%E6%83%9C%E6%B2%A1%E5%A6%82%E6%9E%9C%20-%20%E6%9E%97%E4%BF%8A%E6%9D%B0.mp3",
-        "lrc": "https://picbed.xiaozhangya.xin/music/%E5%8F%AF%E6%83%9C%E6%B2%A1%E5%A6%82%E6%9E%9C%20-%20%E6%9E%97%E4%BF%8A%E6%9D%B0.lrc",
-        "duration": "04:58"
     }
 ]
