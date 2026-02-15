@@ -30,8 +30,8 @@ site:
         - 😈 每个成功人士背后都有一条脊椎
         - 😓 你已急哭
     friend:
-      title: 友人帐
-      subtitle: 记录那些珍贵的友谊，分享彼此的故事
+      title: 链接
+      subtitle: 博客比我帅的速速被我肘击
     about:
       title: About Me
       subtitle: 一个猿人
@@ -43,7 +43,7 @@ site:
       subtitle: 记录和分享我喜欢的动漫作品
     project:
       title: Projects
-      subtitle: 展示一些个人搭建的项目，搬运工！
+      subtitle: 工匠之神伏尔甘
     music:
       title: Cloud Music
       subtitle: 沉浸式享受音乐时光
@@ -85,7 +85,7 @@ site:
       svg: material-symbols:code-blocks-outline
       target: _self
     - id: friend
-      text: 友人帐
+      text: 链接
       href: /friend
       svg: material-symbols:supervisor-account-outline-rounded
       target: _self
@@ -101,7 +101,7 @@ anime:
     apiKey: 08a6bef260044f70c150251c79f2e476
     listId: '8556173'
 github:
-  owner: kobaridev
+  owner: zhangshuooo
   repo: RyuChan
   branch: main
   appId: 在部署端配置环境变量
@@ -138,11 +138,11 @@ user:
         svg: ri:weibo-fill
   footer:
     social:
-      - href: https://github.com/kobaridev
+      - href: https://github.com/zhangshuooo
         ariaLabel: Github
         title: Github
         svg: ri:github-line
-      - href: https://space.bilibili.com/1536411565
+      - href: https://space.bilibili.com/454313193
         ariaLabel: BiliBili
         title: BiliBili
         svg: ri:bilibili-line
