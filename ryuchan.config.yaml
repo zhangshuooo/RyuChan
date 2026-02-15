@@ -69,11 +69,11 @@ site:
       svg: material-symbols:play-circle-outline-rounded
       target: _self
       subItems:
-        - id: anime
-          text: 追番
-          href: /anime
-          svg: material-symbols:movie-outline
-          target: _self
+        # - id: anime
+        #   text: 追番
+        #   href: /anime
+        #   svg: material-symbols:movie-outline
+        #   target: _self
         - id: music
           text: 音乐
           href: /music
